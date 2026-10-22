@@ -55,7 +55,7 @@ if gh repo view "$USERNAME/ace-module2-lab" >/dev/null 2>&1; then
   echo "Repository '$USERNAME/ace-module2-lab' already exists on GitHub."
   echo "Adding remote origin and pushing latest commits..."
   git remote add origin "https://github.com/$USERNAME/ace-module2-lab.git"
-  git push -f -u origin main
+  git push -u origin main
 else
   gh repo create ace-module2-lab --public --source=. --remote=origin --push
 fi
